@@ -5,6 +5,15 @@ modbus:
     port: 502
     name: SUN6KTL_"Solar_SUN2000L"
     sensors:
+      - name: SUN6KtL Grid Power ## 
+        slave: 1
+        address: 37113
+        unit_of_measurement: W
+        data_type: int
+        count: 2
+        scale: 1
+        precision: 1
+        scan_interval: 10
       - name: SUN6KtL Rendimiento Diario A ## SUN6KTL_daily_yield
         slave: 1
         address: 32114
